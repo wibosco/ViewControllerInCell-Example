@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ParentCollectionViewCell: UICollectionViewCell {
+class ColorsCollectionViewCell: UICollectionViewCell {
     
-    static let reuseIdentifier = "ParentCollectionViewCell"
+    static let reuseIdentifier = "ColorsCollectionViewCell"
     
     // MARK: - HostedView
 
@@ -33,7 +33,7 @@ class ParentCollectionViewCell: UICollectionViewCell {
         if hostedView?.superview == contentView { //Make sure that hostedView hasn't been added as a subview to a different cell
             hostedView?.removeFromSuperview()
         } else {
-            print("hostedView is no longer attached to this cell")
+            print("hostedView is no longer attached to this collectionview cell")
         }
 
         hostedView = nil

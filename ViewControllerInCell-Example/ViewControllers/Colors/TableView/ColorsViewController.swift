@@ -12,7 +12,7 @@ class ColorsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    lazy var colorViewControllers: [ColorViewController] = {
+    private lazy var colorViewControllers: [ColorViewController] = {
         var colorViewControllers = [ColorViewController]()
         
         for _ in 0...100 {
@@ -36,8 +36,8 @@ class ColorsViewController: UIViewController {
     // MARK: - ChildViewControllers
     
     private func addChildContentViewController(_ childViewController: UIViewController) {
-        addChildViewController(childViewController)
-        childViewController.didMove(toParentViewController: self)
+        addChild(childViewController)
+        childViewController.didMove(toParent: self)
     }
 }
 

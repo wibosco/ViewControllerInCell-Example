@@ -8,42 +8,35 @@
 
 import UIKit
 
-class ParentCollectionViewViewController: UIViewController {
+class ColorsCollectionViewViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
-    lazy var childCollectionViewViewControllers: [ChildCollectionViewViewController] = {
-        var childCollectionViewViewControllers = [ChildCollectionViewViewController]()
+    private lazy var colorViewControllers: [ColorViewController] = {
+        var colorViewControllers = [ColorViewController]()
         
         for _ in 0...100 {
-            let childCollectionViewViewController = ChildCollectionViewViewController.createFromStoryboard()
+            let colorViewController = ColorViewController.createFromStoryboard()
 
-            addChildContentViewController(childCollectionViewViewController)
-            childCollectionViewViewControllers.append(childCollectionViewViewController)
+            addChildContentViewController(colorViewController)
+            colorViewControllers.append(colorViewController)
         }
         
-        return childCollectionViewViewControllers
+        return colorViewControllers
     }()
-
-    // MARK: - ViewLifecycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
 
     // MARK: - ChildViewControllers
 
     private func addChildContentViewController(_ childViewController: UIViewController) {
-        addChildViewController(childViewController)
-        childViewController.didMove(toParentViewController: self)
+        addChild(childViewController)
+        childViewController.didMove(toParent: self)
     }
 }
 
-extension ParentCollectionViewViewController: UICollectionViewDelegateFlowLayout {
+extension ColorsCollectionViewViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return collectionView.frame.size
+        return CGSize(width: collectionView.frame.size.width, height: 88.0)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -59,20 +52,20 @@ extension ParentCollectionViewViewController: UICollectionViewDelegateFlowLayout
     }
 }
 
-extension ParentCollectionViewViewController: UICollectionViewDataSource {
+extension ColorsCollectionViewViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return childCollectionViewViewControllers.count
+        return colorViewControllers.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let childCollectionViewViewController = childCollectionViewViewControllers[indexPath.row]
+        let colorViewController = colorViewControllers[indexPath.row]
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ParentCollectionViewCell.reuseIdentifier, for: indexPath) as? ParentCollectionViewCell else {
-            fatalError("Expected cell with reuse identifier: \(ParentCollectionViewCell.reuseIdentifier)")
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ColorsCollectionViewCell.reuseIdentifier, for: indexPath) as? ColorsCollectionViewCell else {
+            fatalError("Expected cell with reuse identifier: \(ColorsCollectionViewCell.reuseIdentifier)")
         }
         
-        cell.hostedView = childCollectionViewViewController.view
+        cell.hostedView = colorViewController.view
         
         return cell
     }

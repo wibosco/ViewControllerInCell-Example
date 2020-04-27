@@ -10,7 +10,7 @@ import UIKit
 
 class ColorTableViewCell: UITableViewCell {
 
-    static let reuseIdentifier = "ColorTableViewCellIdentifier"
+    static let reuseIdentifier = "ColorTableViewCell"
     
     // MARK: - HostedView
 
@@ -33,7 +33,7 @@ class ColorTableViewCell: UITableViewCell {
         if hostedView?.superview == contentView { //Make sure that hostedView hasn't been added as a subview to a different cell
             hostedView?.removeFromSuperview()
         } else {
-            print("hostedView is no longer attached to this cell")
+            print("hostedView is no longer attached to this tableview cell")
         }
 
         hostedView = nil
