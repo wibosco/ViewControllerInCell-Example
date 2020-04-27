@@ -51,7 +51,7 @@ extension ColorsViewController: UITableViewDataSource {
         let colorViewController = colorViewControllers[indexPath.row]
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ColorTableViewCell.reuseIdentifier, for: indexPath) as? ColorTableViewCell else {
-            fatalError("Unexpected cell being dequeued")
+            fatalError("Expected cell with reuse identifier: \(ColorTableViewCell.reuseIdentifier)")
         }
         
         cell.hostedView = colorViewController.view

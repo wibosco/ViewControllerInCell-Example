@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DB541E52456F1DA0076FFDE /* ParentCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB541E42456F1DA0076FFDE /* ParentCollectionViewViewController.swift */; };
+		3DB541E72456F3AF0076FFDE /* ParentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB541E62456F3AF0076FFDE /* ParentCollectionViewCell.swift */; };
+		3DB541EC245709000076FFDE /* ChildCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB541EB245709000076FFDE /* ChildCollectionViewViewController.swift */; };
+		3DB541EE245709A10076FFDE /* ChildCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB541ED245709A10076FFDE /* ChildCollectionViewCell.swift */; };
 		C28C8B5120738D1C0073DCAA /* ViewControllerInCell_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28C8B5020738D1C0073DCAA /* ViewControllerInCell_ExampleTests.swift */; };
 		C28C8B5C20738D1C0073DCAA /* ViewControllerInCell_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28C8B5B20738D1C0073DCAA /* ViewControllerInCell_ExampleUITests.swift */; };
 		C28C8B7720738D740073DCAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28C8B6A20738D730073DCAA /* Assets.xcassets */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DB541E42456F1DA0076FFDE /* ParentCollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentCollectionViewViewController.swift; sourceTree = "<group>"; };
+		3DB541E62456F3AF0076FFDE /* ParentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentCollectionViewCell.swift; sourceTree = "<group>"; };
+		3DB541EB245709000076FFDE /* ChildCollectionViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildCollectionViewViewController.swift; sourceTree = "<group>"; };
+		3DB541ED245709A10076FFDE /* ChildCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCollectionViewCell.swift; sourceTree = "<group>"; };
 		C28C8B3620738D1B0073DCAA /* ViewControllerInCell-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewControllerInCell-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28C8B4C20738D1C0073DCAA /* ViewControllerInCell-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewControllerInCell-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28C8B5020738D1C0073DCAA /* ViewControllerInCell_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInCell_ExampleTests.swift; sourceTree = "<group>"; };
@@ -82,6 +90,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DB541E32456F1B20076FFDE /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3DB541EA245709000076FFDE /* Child */,
+				3DB541E42456F1DA0076FFDE /* ParentCollectionViewViewController.swift */,
+				3DB541E62456F3AF0076FFDE /* ParentCollectionViewCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		3DB541EA245709000076FFDE /* Child */ = {
+			isa = PBXGroup;
+			children = (
+				3DB541EB245709000076FFDE /* ChildCollectionViewViewController.swift */,
+				3DB541ED245709A10076FFDE /* ChildCollectionViewCell.swift */,
+			);
+			path = Child;
+			sourceTree = "<group>";
+		};
 		C28C8B2D20738D1B0073DCAA = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +197,7 @@
 		C28C8B7420738D740073DCAA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3DB541E32456F1B20076FFDE /* CollectionView */,
 				C28C8B88207392300073DCAA /* Colors */,
 			);
 			path = ViewControllers;
@@ -345,8 +373,12 @@
 			files = (
 				C28C8B8B207392300073DCAA /* ColorsViewController.swift in Sources */,
 				C28C8B8F2073930E0073DCAA /* ColorTableViewCell.swift in Sources */,
+				3DB541EC245709000076FFDE /* ChildCollectionViewViewController.swift in Sources */,
+				3DB541E72456F3AF0076FFDE /* ParentCollectionViewCell.swift in Sources */,
 				C28C8B7A20738D740073DCAA /* AppDelegate.swift in Sources */,
 				C28C8B8320738E2F0073DCAA /* CGFloat+Random.swift in Sources */,
+				3DB541E52456F1DA0076FFDE /* ParentCollectionViewViewController.swift in Sources */,
+				3DB541EE245709A10076FFDE /* ChildCollectionViewCell.swift in Sources */,
 				C28C8B8520738E2F0073DCAA /* UIColor+Random.swift in Sources */,
 				C28C8B8D2073923F0073DCAA /* ColorViewController.swift in Sources */,
 			);
