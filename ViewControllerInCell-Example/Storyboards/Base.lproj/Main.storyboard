@@ -79,7 +79,7 @@
         <!--TableView-->
         <scene sceneID="0QL-Zt-sgZ">
             <objects>
-                <viewController title="TableView" id="gDc-sU-zCR" customClass="ColorsViewController" customModule="ViewControllerInCell_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="TableView" id="gDc-sU-zCR" customClass="ColorsTableViewViewController" customModule="ViewControllerInCell_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IqL-2z-ce8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

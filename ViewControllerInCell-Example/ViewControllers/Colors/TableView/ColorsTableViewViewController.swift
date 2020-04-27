@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ColorsViewController: UIViewController {
+class ColorsTableViewViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -41,7 +41,7 @@ class ColorsViewController: UIViewController {
     }
 }
 
-extension ColorsViewController: UITableViewDataSource {
+extension ColorsTableViewViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return colorViewControllers.count
