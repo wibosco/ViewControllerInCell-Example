@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D09B93D24573A060071B3A3 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93424573A060071B3A3 /* ColorViewController.swift */; };
+		3D09B93E24573A060071B3A3 /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93724573A060071B3A3 /* ColorTableViewCell.swift */; };
+		3D09B93F24573A060071B3A3 /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93824573A060071B3A3 /* ColorsViewController.swift */; };
+		3D09B94024573A060071B3A3 /* ColorsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93A24573A060071B3A3 /* ColorsCollectionViewCell.swift */; };
+		3D09B94124573A060071B3A3 /* ColorsCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93B24573A060071B3A3 /* ColorsCollectionViewViewController.swift */; };
 		C28C8B5120738D1C0073DCAA /* ViewControllerInCell_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28C8B5020738D1C0073DCAA /* ViewControllerInCell_ExampleTests.swift */; };
 		C28C8B5C20738D1C0073DCAA /* ViewControllerInCell_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28C8B5B20738D1C0073DCAA /* ViewControllerInCell_ExampleUITests.swift */; };
 		C28C8B7720738D740073DCAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28C8B6A20738D730073DCAA /* Assets.xcassets */; };
@@ -15,9 +20,6 @@
 		C28C8B7A20738D740073DCAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28C8B7120738D730073DCAA /* AppDelegate.swift */; };
 		C28C8B8320738E2F0073DCAA /* CGFloat+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28C8B7F20738E2F0073DCAA /* CGFloat+Random.swift */; };
 		C28C8B8520738E2F0073DCAA /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28C8B8220738E2F0073DCAA /* UIColor+Random.swift */; };
-		C28C8B8B207392300073DCAA /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28C8B8A207392300073DCAA /* ColorsViewController.swift */; };
-		C28C8B8D2073923F0073DCAA /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28C8B8C2073923F0073DCAA /* ColorViewController.swift */; };
-		C28C8B8F2073930E0073DCAA /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28C8B8E2073930E0073DCAA /* ColorTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D09B93424573A060071B3A3 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		3D09B93724573A060071B3A3 /* ColorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
+		3D09B93824573A060071B3A3 /* ColorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
+		3D09B93A24573A060071B3A3 /* ColorsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D09B93B24573A060071B3A3 /* ColorsCollectionViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsCollectionViewViewController.swift; sourceTree = "<group>"; };
 		C28C8B3620738D1B0073DCAA /* ViewControllerInCell-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewControllerInCell-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28C8B4C20738D1C0073DCAA /* ViewControllerInCell-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewControllerInCell-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28C8B5020738D1C0073DCAA /* ViewControllerInCell_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInCell_ExampleTests.swift; sourceTree = "<group>"; };
@@ -52,9 +59,6 @@
 		C28C8B7220738D730073DCAA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C28C8B7F20738E2F0073DCAA /* CGFloat+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Random.swift"; sourceTree = "<group>"; };
 		C28C8B8220738E2F0073DCAA /* UIColor+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Random.swift"; sourceTree = "<group>"; };
-		C28C8B8A207392300073DCAA /* ColorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
-		C28C8B8C2073923F0073DCAA /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
-		C28C8B8E2073930E0073DCAA /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D09B93324573A060071B3A3 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				3D09B93424573A060071B3A3 /* ColorViewController.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		3D09B93524573A060071B3A3 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				3D09B93624573A060071B3A3 /* TableView */,
+				3D09B93924573A060071B3A3 /* CollectionView */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		3D09B93624573A060071B3A3 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				3D09B93724573A060071B3A3 /* ColorTableViewCell.swift */,
+				3D09B93824573A060071B3A3 /* ColorsViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		3D09B93924573A060071B3A3 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3D09B93A24573A060071B3A3 /* ColorsCollectionViewCell.swift */,
+				3D09B93B24573A060071B3A3 /* ColorsCollectionViewViewController.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		C28C8B2D20738D1B0073DCAA = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +209,8 @@
 		C28C8B7420738D740073DCAA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C28C8B88207392300073DCAA /* Colors */,
+				3D09B93324573A060071B3A3 /* Color */,
+				3D09B93524573A060071B3A3 /* Colors */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -189,24 +229,6 @@
 				C28C8B8220738E2F0073DCAA /* UIColor+Random.swift */,
 			);
 			path = UIColor;
-			sourceTree = "<group>";
-		};
-		C28C8B88207392300073DCAA /* Colors */ = {
-			isa = PBXGroup;
-			children = (
-				C28C8B89207392300073DCAA /* Color */,
-				C28C8B8A207392300073DCAA /* ColorsViewController.swift */,
-				C28C8B8E2073930E0073DCAA /* ColorTableViewCell.swift */,
-			);
-			path = Colors;
-			sourceTree = "<group>";
-		};
-		C28C8B89207392300073DCAA /* Color */ = {
-			isa = PBXGroup;
-			children = (
-				C28C8B8C2073923F0073DCAA /* ColorViewController.swift */,
-			);
-			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +294,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "William Boles";
 				TargetAttributes = {
 					C28C8B3520738D1B0073DCAA = {
@@ -343,12 +365,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C28C8B8B207392300073DCAA /* ColorsViewController.swift in Sources */,
-				C28C8B8F2073930E0073DCAA /* ColorTableViewCell.swift in Sources */,
+				3D09B93E24573A060071B3A3 /* ColorTableViewCell.swift in Sources */,
 				C28C8B7A20738D740073DCAA /* AppDelegate.swift in Sources */,
 				C28C8B8320738E2F0073DCAA /* CGFloat+Random.swift in Sources */,
+				3D09B94124573A060071B3A3 /* ColorsCollectionViewViewController.swift in Sources */,
+				3D09B93D24573A060071B3A3 /* ColorViewController.swift in Sources */,
+				3D09B93F24573A060071B3A3 /* ColorsViewController.swift in Sources */,
 				C28C8B8520738E2F0073DCAA /* UIColor+Random.swift in Sources */,
-				C28C8B8D2073923F0073DCAA /* ColorViewController.swift in Sources */,
+				3D09B94024573A060071B3A3 /* ColorsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +441,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -424,6 +449,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -457,6 +483,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -474,6 +501,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -481,6 +509,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -506,6 +535,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -519,7 +549,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.ViewControllerInCell-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -533,7 +562,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.ViewControllerInCell-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -548,7 +576,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.ViewControllerInCell-ExampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewControllerInCell-Example.app/ViewControllerInCell-Example";
 			};
@@ -564,7 +591,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.ViewControllerInCell-ExampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewControllerInCell-Example.app/ViewControllerInCell-Example";
 			};
@@ -579,7 +605,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.ViewControllerInCell-ExampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "ViewControllerInCell-Example";
 			};
@@ -594,7 +619,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.ViewControllerInCell-ExampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "ViewControllerInCell-Example";
 			};

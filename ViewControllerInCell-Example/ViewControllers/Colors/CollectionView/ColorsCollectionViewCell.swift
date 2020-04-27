@@ -1,16 +1,16 @@
 //
-//  ColorTableViewCell.swift
+//  ColorsCollectionViewCell.swift
 //  ViewControllerInCell-Example
 //
-//  Created by William Boles on 03/04/2018.
-//  Copyright © 2018 William Boles. All rights reserved.
+//  Created by William Boles on 27/04/2020.
+//  Copyright © 2020 William Boles. All rights reserved.
 //
 
 import UIKit
 
-class ColorTableViewCell: UITableViewCell {
-
-    static let reuseIdentifier = "ColorTableViewCellIdentifier"
+class ColorsCollectionViewCell: UICollectionViewCell {
+    
+    static let reuseIdentifier = "ColorsCollectionViewCell"
     
     // MARK: - HostedView
 
@@ -33,7 +33,7 @@ class ColorTableViewCell: UITableViewCell {
         if hostedView?.superview == contentView { //Make sure that hostedView hasn't been added as a subview to a different cell
             hostedView?.removeFromSuperview()
         } else {
-            print("hostedView is no longer attached to this cell")
+            print("hostedView is no longer attached to this collectionview cell")
         }
 
         hostedView = nil
