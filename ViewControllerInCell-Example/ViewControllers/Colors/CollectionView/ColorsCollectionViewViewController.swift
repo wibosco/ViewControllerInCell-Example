@@ -61,8 +61,8 @@ extension ColorsCollectionViewViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let colorViewController = colorViewControllers[indexPath.row]
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ColorsCollectionViewCell.reuseIdentifier, for: indexPath) as? ColorsCollectionViewCell else {
-            fatalError("Expected cell with reuse identifier: \(ColorsCollectionViewCell.reuseIdentifier)")
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ColorCollectionViewCell.reuseIdentifier, for: indexPath) as? ColorCollectionViewCell else {
+            fatalError("Expected cell with reuse identifier: \(ColorCollectionViewCell.reuseIdentifier)")
         }
         
         cell.hostedView = colorViewController.view

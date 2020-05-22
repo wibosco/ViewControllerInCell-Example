@@ -10,7 +10,7 @@
 		3D09B93D24573A060071B3A3 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93424573A060071B3A3 /* ColorViewController.swift */; };
 		3D09B93E24573A060071B3A3 /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93724573A060071B3A3 /* ColorTableViewCell.swift */; };
 		3D09B93F24573A060071B3A3 /* ColorsTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93824573A060071B3A3 /* ColorsTableViewViewController.swift */; };
-		3D09B94024573A060071B3A3 /* ColorsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93A24573A060071B3A3 /* ColorsCollectionViewCell.swift */; };
+		3D09B94024573A060071B3A3 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93A24573A060071B3A3 /* ColorCollectionViewCell.swift */; };
 		3D09B94124573A060071B3A3 /* ColorsCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93B24573A060071B3A3 /* ColorsCollectionViewViewController.swift */; };
 		C28C8B5120738D1C0073DCAA /* ViewControllerInCell_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28C8B5020738D1C0073DCAA /* ViewControllerInCell_ExampleTests.swift */; };
 		C28C8B5C20738D1C0073DCAA /* ViewControllerInCell_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28C8B5B20738D1C0073DCAA /* ViewControllerInCell_ExampleUITests.swift */; };
@@ -43,7 +43,7 @@
 		3D09B93424573A060071B3A3 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		3D09B93724573A060071B3A3 /* ColorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
 		3D09B93824573A060071B3A3 /* ColorsTableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsTableViewViewController.swift; sourceTree = "<group>"; };
-		3D09B93A24573A060071B3A3 /* ColorsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D09B93A24573A060071B3A3 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D09B93B24573A060071B3A3 /* ColorsCollectionViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsCollectionViewViewController.swift; sourceTree = "<group>"; };
 		C28C8B3620738D1B0073DCAA /* ViewControllerInCell-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewControllerInCell-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28C8B4C20738D1C0073DCAA /* ViewControllerInCell-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewControllerInCell-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +115,7 @@
 		3D09B93924573A060071B3A3 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				3D09B93A24573A060071B3A3 /* ColorsCollectionViewCell.swift */,
+				3D09B93A24573A060071B3A3 /* ColorCollectionViewCell.swift */,
 				3D09B93B24573A060071B3A3 /* ColorsCollectionViewViewController.swift */,
 			);
 			path = CollectionView;
@@ -372,7 +372,7 @@
 				3D09B93D24573A060071B3A3 /* ColorViewController.swift in Sources */,
 				3D09B93F24573A060071B3A3 /* ColorsTableViewViewController.swift in Sources */,
 				C28C8B8520738E2F0073DCAA /* UIColor+Random.swift in Sources */,
-				3D09B94024573A060071B3A3 /* ColorsCollectionViewCell.swift in Sources */,
+				3D09B94024573A060071B3A3 /* ColorCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

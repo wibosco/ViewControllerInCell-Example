@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ColorsCollectionViewCell: UICollectionViewCell {
+class ColorCollectionViewCell: UICollectionViewCell {
     
-    static let reuseIdentifier = "ColorsCollectionViewCell"
+    static let reuseIdentifier = "ColorCollectionViewCell"
     
     // MARK: - HostedView
 
