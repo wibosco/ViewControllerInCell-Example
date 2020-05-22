@@ -17,6 +17,11 @@ class ColorTableViewCell: UITableViewCell {
     private var _hostedView: UIView? {
         didSet {
             guard let _hostedView = _hostedView else {
+                guard isViewDescendantOfContentView(oldValue) else {
+                    return
+                }
+                
+                oldValue?.removeFromSuperview()
                 return
             }
             
@@ -25,13 +30,9 @@ class ColorTableViewCell: UITableViewCell {
         }
     }
     
-    private var isHostedViewInViewHierarchy: Bool {
-        return _hostedView?.superview == contentView
-    }
-    
     var hostedView: UIView? {
         get {
-            guard isHostedViewInViewHierarchy else {
+            guard isViewDescendantOfContentView(_hostedView) else {
                 return nil
             }
             return _hostedView
@@ -40,17 +41,21 @@ class ColorTableViewCell: UITableViewCell {
             _hostedView = newValue
         }
     }
+    
+    func isViewDescendantOfContentView(_ view: UIView?) -> Bool {
+        return view?.isDescendant(of: contentView) ?? false
+    }
 
     // MARK: - Reuse
 
     override func prepareForReuse() {
         super.prepareForReuse()
         
-        if isHostedViewInViewHierarchy { //Make sure that hostedView hasn't been added as a subview to a different cell
-            _hostedView?.removeFromSuperview()
-        } else {
-            print("hostedView is no longer attached to this tableview cell")
-        }
+//        if isViewDescendantOfContentView(_hostedView) { //Make sure that hostedView hasn't been added as a subview to a different cell
+//            _hostedView?.removeFromSuperview()
+//        } else {
+//            print("hostedView is no longer attached to this tableview cell")
+//        }
 
         _hostedView = nil
     }
