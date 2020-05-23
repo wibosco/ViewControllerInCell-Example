@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3D09B93D24573A060071B3A3 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93424573A060071B3A3 /* ColorViewController.swift */; };
-		3D09B93E24573A060071B3A3 /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93724573A060071B3A3 /* ColorTableViewCell.swift */; };
-		3D09B93F24573A060071B3A3 /* ColorsTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93824573A060071B3A3 /* ColorsTableViewViewController.swift */; };
-		3D09B94024573A060071B3A3 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93A24573A060071B3A3 /* ColorCollectionViewCell.swift */; };
-		3D09B94124573A060071B3A3 /* ColorsCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93B24573A060071B3A3 /* ColorsCollectionViewViewController.swift */; };
+		3D09B93E24573A060071B3A3 /* HostedViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93724573A060071B3A3 /* HostedViewTableViewCell.swift */; };
+		3D09B93F24573A060071B3A3 /* HostedViewTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93824573A060071B3A3 /* HostedViewTableViewViewController.swift */; };
+		3D09B94024573A060071B3A3 /* HostedViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93A24573A060071B3A3 /* HostedViewCollectionViewCell.swift */; };
+		3D09B94124573A060071B3A3 /* HostedViewCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D09B93B24573A060071B3A3 /* HostedViewCollectionViewViewController.swift */; };
 		C28C8B5120738D1C0073DCAA /* ViewControllerInCell_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28C8B5020738D1C0073DCAA /* ViewControllerInCell_ExampleTests.swift */; };
 		C28C8B5C20738D1C0073DCAA /* ViewControllerInCell_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28C8B5B20738D1C0073DCAA /* ViewControllerInCell_ExampleUITests.swift */; };
 		C28C8B7720738D740073DCAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28C8B6A20738D730073DCAA /* Assets.xcassets */; };
@@ -41,10 +41,10 @@
 
 /* Begin PBXFileReference section */
 		3D09B93424573A060071B3A3 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
-		3D09B93724573A060071B3A3 /* ColorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
-		3D09B93824573A060071B3A3 /* ColorsTableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsTableViewViewController.swift; sourceTree = "<group>"; };
-		3D09B93A24573A060071B3A3 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
-		3D09B93B24573A060071B3A3 /* ColorsCollectionViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsCollectionViewViewController.swift; sourceTree = "<group>"; };
+		3D09B93724573A060071B3A3 /* HostedViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostedViewTableViewCell.swift; sourceTree = "<group>"; };
+		3D09B93824573A060071B3A3 /* HostedViewTableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostedViewTableViewViewController.swift; sourceTree = "<group>"; };
+		3D09B93A24573A060071B3A3 /* HostedViewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostedViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D09B93B24573A060071B3A3 /* HostedViewCollectionViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostedViewCollectionViewViewController.swift; sourceTree = "<group>"; };
 		C28C8B3620738D1B0073DCAA /* ViewControllerInCell-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewControllerInCell-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28C8B4C20738D1C0073DCAA /* ViewControllerInCell-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViewControllerInCell-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28C8B5020738D1C0073DCAA /* ViewControllerInCell_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInCell_ExampleTests.swift; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 		3D09B93624573A060071B3A3 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				3D09B93724573A060071B3A3 /* ColorTableViewCell.swift */,
-				3D09B93824573A060071B3A3 /* ColorsTableViewViewController.swift */,
+				3D09B93724573A060071B3A3 /* HostedViewTableViewCell.swift */,
+				3D09B93824573A060071B3A3 /* HostedViewTableViewViewController.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -115,8 +115,8 @@
 		3D09B93924573A060071B3A3 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				3D09B93A24573A060071B3A3 /* ColorCollectionViewCell.swift */,
-				3D09B93B24573A060071B3A3 /* ColorsCollectionViewViewController.swift */,
+				3D09B93A24573A060071B3A3 /* HostedViewCollectionViewCell.swift */,
+				3D09B93B24573A060071B3A3 /* HostedViewCollectionViewViewController.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -365,14 +365,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D09B93E24573A060071B3A3 /* ColorTableViewCell.swift in Sources */,
+				3D09B93E24573A060071B3A3 /* HostedViewTableViewCell.swift in Sources */,
 				C28C8B7A20738D740073DCAA /* AppDelegate.swift in Sources */,
 				C28C8B8320738E2F0073DCAA /* CGFloat+Random.swift in Sources */,
-				3D09B94124573A060071B3A3 /* ColorsCollectionViewViewController.swift in Sources */,
+				3D09B94124573A060071B3A3 /* HostedViewCollectionViewViewController.swift in Sources */,
 				3D09B93D24573A060071B3A3 /* ColorViewController.swift in Sources */,
-				3D09B93F24573A060071B3A3 /* ColorsTableViewViewController.swift in Sources */,
+				3D09B93F24573A060071B3A3 /* HostedViewTableViewViewController.swift in Sources */,
 				C28C8B8520738E2F0073DCAA /* UIColor+Random.swift in Sources */,
-				3D09B94024573A060071B3A3 /* ColorCollectionViewCell.swift in Sources */,
+				3D09B94024573A060071B3A3 /* HostedViewCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -531,7 +531,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

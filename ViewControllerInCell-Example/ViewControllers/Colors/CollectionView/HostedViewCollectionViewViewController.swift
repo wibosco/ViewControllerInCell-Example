@@ -1,5 +1,5 @@
 //
-//  ColorsCollectionViewViewController.swift
+//  HostedViewCollectionViewViewController.swift
 //  ViewControllerInCell-Example
 //
 //  Created by William Boles on 27/04/2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ColorsCollectionViewViewController: UIViewController {
+class HostedViewCollectionViewViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -33,7 +33,7 @@ class ColorsCollectionViewViewController: UIViewController {
     }
 }
 
-extension ColorsCollectionViewViewController: UICollectionViewDelegateFlowLayout {
+extension HostedViewCollectionViewViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.size.width, height: 88.0)
@@ -52,7 +52,7 @@ extension ColorsCollectionViewViewController: UICollectionViewDelegateFlowLayout
     }
 }
 
-extension ColorsCollectionViewViewController: UICollectionViewDataSource {
+extension HostedViewCollectionViewViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return colorViewControllers.count
@@ -61,8 +61,8 @@ extension ColorsCollectionViewViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let colorViewController = colorViewControllers[indexPath.row]
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ColorCollectionViewCell.reuseIdentifier, for: indexPath) as? ColorCollectionViewCell else {
-            fatalError("Expected cell with reuse identifier: \(ColorCollectionViewCell.reuseIdentifier)")
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HostedViewCollectionViewCell.reuseIdentifier, for: indexPath) as? HostedViewCollectionViewCell else {
+            fatalError("Expected cell with reuse identifier: \(HostedViewCollectionViewCell.reuseIdentifier)")
         }
         
         cell.hostedView = colorViewController.view

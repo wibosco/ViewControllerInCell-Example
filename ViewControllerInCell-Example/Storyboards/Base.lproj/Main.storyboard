@@ -12,7 +12,7 @@
         <!--CollectionView-->
         <scene sceneID="iKR-R5-bHj">
             <objects>
-                <viewController title="CollectionView" id="eeY-Y0-OQd" customClass="ColorsCollectionViewViewController" customModule="ViewControllerInCell_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="CollectionView" id="eeY-Y0-OQd" customClass="HostedViewCollectionViewViewController" customModule="ViewControllerInCell_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cbn-3e-E7W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColorCollectionViewCell" id="KAO-2N-Noy" customClass="ColorCollectionViewCell" customModule="ViewControllerInCell_Example" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HostedViewCollectionViewCell" id="KAO-2N-Noy" customClass="HostedViewCollectionViewCell" customModule="ViewControllerInCell_Example" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TTQ-Zf-CHd">
@@ -79,7 +79,7 @@
         <!--TableView-->
         <scene sceneID="0QL-Zt-sgZ">
             <objects>
-                <viewController title="TableView" id="gDc-sU-zCR" customClass="ColorsTableViewViewController" customModule="ViewControllerInCell_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="TableView" id="gDc-sU-zCR" customClass="HostedViewTableViewViewController" customModule="ViewControllerInCell_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IqL-2z-ce8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +89,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ColorTableViewCell" rowHeight="88" id="lk0-5S-LTc" customClass="ColorTableViewCell" customModule="ViewControllerInCell_Example" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HostedViewTableViewCell" rowHeight="88" id="lk0-5S-LTc" customClass="HostedViewTableViewCell" customModule="ViewControllerInCell_Example" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lk0-5S-LTc" id="c41-kt-rDc">

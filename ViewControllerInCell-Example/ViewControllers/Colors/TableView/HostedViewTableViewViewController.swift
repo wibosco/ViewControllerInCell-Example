@@ -1,5 +1,5 @@
 //
-//  ColorsViewController.swift
+//  HostedViewTableViewViewController.swift
 //  ViewControllerInCell-Example
 //
 //  Created by William Boles on 03/04/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ColorsTableViewViewController: UIViewController {
+class HostedViewTableViewViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -41,7 +41,7 @@ class ColorsTableViewViewController: UIViewController {
     }
 }
 
-extension ColorsTableViewViewController: UITableViewDataSource {
+extension HostedViewTableViewViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return colorViewControllers.count
@@ -50,8 +50,8 @@ extension ColorsTableViewViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let colorViewController = colorViewControllers[indexPath.row]
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: ColorTableViewCell.reuseIdentifier, for: indexPath) as? ColorTableViewCell else {
-            fatalError("Expected cell with reuse identifier: \(ColorTableViewCell.reuseIdentifier)")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: HostedViewTableViewCell.reuseIdentifier, for: indexPath) as? HostedViewTableViewCell else {
+            fatalError("Expected cell with reuse identifier: \(HostedViewTableViewCell.reuseIdentifier)")
         }
         
         cell.hostedView = colorViewController.view
